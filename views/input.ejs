@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Meeting</title>
+
+
+
+    <!-- css -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.js"
+        integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script></script>
+
+</head>
+
+<body>
+    <br> <br> <br> <br>
+
+    <form action="/input" method="POST">
+
+        <div class="row">
+            <div class="input-field col s12">
+                    <i class="material-icons prefix">account_circle</i>
+                <input id="location" name="location" type="text" class="validate">
+                <label class="active" for="location"> Location </label>
+            </div>
+        </div>
+
+
+        <input type="hidden" name="instant" value="0">
+        <div class="input-field col l12 s12 m12 center">
+            <button class="btn waves-effect waves-light" id="btnsubmit" type="submit" name="register">submit
+            </button><br><br>
+
+
+    </form>
+
+    <script>
+    
+        $(document).ready(function () {
+            M.updateTextFields();
+        });
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.js"
+        integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+</body>
+
+</html>
